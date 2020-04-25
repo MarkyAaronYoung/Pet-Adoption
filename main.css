@@ -1,22 +1,53 @@
 body {
-  background-color: red;
-  font-family: : Arial, Helvetica, sans-serif;
-};
+  background-color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
 .pets {
-  border: 1px black;
-  width: ;
+  border: solid 8px beige;
+  width: 300px;
+}
+
+.pets img {
+ display: block;
+ margin-left: auto;
+ margin-right: auto;
+ border: solid 3px whitesmoke;
+ width: 200px;
+}
+
+p {
+ 
+  text-align: center;
 }
 
 #pets {
-  display: flex;;
+  display: flex;
   flex-flow: row wrap;
   justify-content: center;
   width: fit-content;
 }
 
+h2 {
+  background-color: bisque;
+  text-align: center;
+  border: dotted 2px beige;
+}
+
+h3 {
+  text-align: center;
+  border: dotted 2px beige;
+  background-color: bisque;
+}
+
+h4 {
+  text-align: center;
+
+
+}
+
 .dino {
-  border: 3px dotted blueviolet;
+  border: 3px solid blueviolet;
   width: 300px;
   margin: 10px;
   padding: 10px;

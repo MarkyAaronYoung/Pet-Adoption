@@ -223,24 +223,25 @@ const buildPetCards =(petsCollection) => {
     let domString = '';
 
     for (let i = 0; i < petsCollection.length; i++) {
-        domString += '<div class="pets">'
+        domString += '<div class="pets">';
         domString += `<h2>${petsCollection[i].name}</h2>`;
-        domString += `<img src="${petsCollection[i].imageUrl}" alt="">`
+        domString += `<img src="${petsCollection[i].imageUrl}" alt="">`;
         domString += `<h3>${petsCollection[i].color}</h3>`;
         domString += `<p>${petsCollection[i].specialSkill}</p>`;
         if (petsCollection[i].type === 'cat') {
-              domString += `<h2 class="name1">${petsCollection[i].type}</h2>` 
+              domString += `<h4 class="name1">${petsCollection[i].type}</h4>`; 
         }
         if (petsCollection[i].type === 'dog') {
-              domString += `<h2 class="name2">${petsCollection[i].type}</h2>` 
-        
-        } if (petsCollection[i].type === 'dino') {
-              domString += `<h2 class="name3">${petsCollection[i].type}</h2>` 
-    }
-    domString += '</div>'
+              domString += `<h4 class="name2">${petsCollection[i].type}</h4>`; 
+        } 
+        if (petsCollection[i].type === 'dino') {
+              domString += `<h4 class="name3">${petsCollection[i].type}</h4>`;
+        }
+    
+        domString += '</div>'
       
   }
-    printToDom('#pets', domString);
+  printToDom('#pets', domString);
 
  };
  
@@ -269,6 +270,7 @@ const init = () => {
 }
 
 init();
+
 
 // const printToDom = (selector, textToPrint) => {
 //   console.log('in printToDom', selector, textToPrint);
