@@ -229,13 +229,13 @@ const buildPetCards =(petsCollection) => {
         domString += `<h3>${petsCollection[i].color}</h3>`;
         domString += `<p>${petsCollection[i].specialSkill}</p>`;
         if (petsCollection[i].type === 'cat') {
-              domString += `<h4 class="name1">${petsCollection[i].type}</h4>`; 
+              domString += `<footer class="name1">CAT</footer>`; 
         }
         if (petsCollection[i].type === 'dog') {
-              domString += `<h4 class="name2">${petsCollection[i].type}</h4>`; 
+              domString += `<footer class="name2">DOG</footer>`; 
         } 
         if (petsCollection[i].type === 'dino') {
-              domString += `<h4 class="name3">${petsCollection[i].type}</h4>`;
+              domString += `<footer class="name3">DINO</footer>`;
         }
     
         domString += '</div>'
