@@ -4,7 +4,8 @@ body {
 }
 
 .pets {
-  border: solid 8px beige;
+  border: solid 2px brown;
+  margin: 10px;
   width: 300px;
 }
 
@@ -28,16 +29,28 @@ p {
   width: fit-content;
 }
 
+h1 {
+  text-align: center;
+  font-size: 50px;
+  font-variant: petite-caps;
+  letter-spacing: 15px;
+}
+
 h2 {
   background-color: bisque;
   text-align: center;
-  border: dotted 2px beige;
+  border: solid 5px beige;
+  color: whitesmoke;
+  text-shadow: 3px 3px black;
 }
 
 h3 {
   text-align: center;
-  border: dotted 2px beige;
+  border: solid 5px beige;
   background-color: bisque;
+  font-family: serif;
+  font-size: 22px;
+  letter-spacing: 5px;
 }
 
 h4 {
