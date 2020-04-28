@@ -243,8 +243,33 @@ const buildPetCards =(petsCollection) => {
   }
   printToDom('#pets', domString);
 
- };
+ }
+
+ const filterPetsEvent = (event) => {
+   const buttonId = event.target.id;
+   const tempPetCollection = [];
+
+   if (buttonId === 'all') {
+     buildPetCards(pets);
+     return;
+   }
+
+   for (let i = 0; i < pets.length; i++) {
+     if (pets[i].owner === buttonId) {
+       tempPetCollection.push(pets[i]);
+     }
+   }
+
+   buildPetCards(tempPetCollection);
+ }
  
+ const clickEvents = () => {
+  document.querySelector('#all').addEventListener('click', filterPetsEvent);
+  document.querySelector('#myCat').addEventListener('click', filterPetsEvent);
+  document.querySelector('#myDog').addEventListener('click', filterPetsEvent);
+  document.querySelector('#myDino').addEventListener('click', filterPetsEvent);
+ }
+
 // const myTestFun = petsCollection.filter(item => {
 //   return item.type ===
 // });
@@ -267,6 +292,7 @@ const buildPetCards =(petsCollection) => {
 // } 
 const init = () => {
   buildPetCards(pets);
+  clickEvents();
 }
 
 init();

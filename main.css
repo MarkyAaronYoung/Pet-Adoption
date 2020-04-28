@@ -74,10 +74,28 @@ footer {
 
 .name2 {
   background-color: chocolate;
-  align-items: baseline;
 }
 
 .name3 {
   background-color: darkgray;
-  justify-content: baseline;
+}
+
+allPets {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.pets {
+  border: 2px solid rebeccapurple;
+  border-radius: 20px;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  transition: background-color 1s, box-shadow 500ms;
+}
+
+.pets:hover {
+  background-color: seagreen;
+  box-shadow: 10px 10px 10px 10px seagreen;
 }
